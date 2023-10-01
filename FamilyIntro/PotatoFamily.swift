@@ -12,7 +12,7 @@ import Foundation
 // forgot to turn this into a struct. I should be writing more metacode
     // enum is all that is needed actually! // do i?? 
 enum Person: String {
-    case mom = "mom", pops = "pops", fry = "fry", grandma = "grandma"
+    case mom = "Mom", pops = "Pops", fry = "Fry", grandma = "Grandma"
     
     var descripton: String {
         switch self {

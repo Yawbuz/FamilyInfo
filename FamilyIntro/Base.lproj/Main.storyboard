@@ -113,7 +113,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="p0C-nX-dOn"/>
                     <connections>
-                        <outlet property="description" destination="J5s-wb-lZf" id="gl3-QS-iYN"/>
+                        <outlet property="memberDescription" destination="J5s-wb-lZf" id="msE-eV-XF4"/>
                         <outlet property="name" destination="id1-k3-8xP" id="32t-Bf-sb5"/>
                     </connections>
                 </viewController>
