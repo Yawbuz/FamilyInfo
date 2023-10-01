@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA219D472AC71C6B0033C118 /* PotatoFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA219D462AC71C6B0033C118 /* PotatoFamily.swift */; };
+		EA219D4D2AC8DFA60033C118 /* FamilyMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA219D4C2AC8DFA60033C118 /* FamilyMemberViewController.swift */; };
 		EABE5CC92AC27C2F00DCE859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE5CC82AC27C2F00DCE859 /* AppDelegate.swift */; };
 		EABE5CCB2AC27C2F00DCE859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE5CCA2AC27C2F00DCE859 /* SceneDelegate.swift */; };
 		EABE5CCD2AC27C2F00DCE859 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE5CCC2AC27C2F00DCE859 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		EA219D462AC71C6B0033C118 /* PotatoFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotatoFamily.swift; sourceTree = "<group>"; };
+		EA219D4C2AC8DFA60033C118 /* FamilyMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberViewController.swift; sourceTree = "<group>"; };
 		EABE5CC52AC27C2F00DCE859 /* FamilyIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABE5CC82AC27C2F00DCE859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EABE5CCA2AC27C2F00DCE859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +44,6 @@
 		EABE5CBC2AC27C2F00DCE859 = {
 			isa = PBXGroup;
 			children = (
-				EA219D462AC71C6B0033C118 /* PotatoFamily.swift */,
 				EABE5CC72AC27C2F00DCE859 /* FamilyIntro */,
 				EABE5CC62AC27C2F00DCE859 /* Products */,
 			);
@@ -59,6 +60,8 @@
 		EABE5CC72AC27C2F00DCE859 /* FamilyIntro */ = {
 			isa = PBXGroup;
 			children = (
+				EA219D462AC71C6B0033C118 /* PotatoFamily.swift */,
+				EA219D4C2AC8DFA60033C118 /* FamilyMemberViewController.swift */,
 				EABE5CC82AC27C2F00DCE859 /* AppDelegate.swift */,
 				EABE5CCA2AC27C2F00DCE859 /* SceneDelegate.swift */,
 				EABE5CCC2AC27C2F00DCE859 /* ViewController.swift */,
@@ -144,6 +147,7 @@
 				EABE5CCD2AC27C2F00DCE859 /* ViewController.swift in Sources */,
 				EABE5CC92AC27C2F00DCE859 /* AppDelegate.swift in Sources */,
 				EA219D472AC71C6B0033C118 /* PotatoFamily.swift in Sources */,
+				EA219D4D2AC8DFA60033C118 /* FamilyMemberViewController.swift in Sources */,
 				EABE5CCB2AC27C2F00DCE859 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

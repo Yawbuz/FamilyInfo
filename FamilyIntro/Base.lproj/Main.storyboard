@@ -19,15 +19,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Four-unpeeled-potatoes-800x534" translatesAutoresizingMaskIntoConstraints="NO" id="dn2-5A-hLT">
                                 <rect key="frame" x="-70.666666666666686" y="175" width="534.33333333333337" height="609"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYD-gC-IsV">
-                                <rect key="frame" x="234" y="425" width="159" height="275"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="familyMemberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ruZ-uV-gik"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrC-jW-nP7">
                                 <rect key="frame" x="16" y="246" width="147" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -35,6 +26,15 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="familyMemberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uO5-MP-bIh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYD-gC-IsV">
+                                <rect key="frame" x="234" y="425" width="159" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="familyMemberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ruZ-uV-gik"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teT-AD-XZh">
@@ -71,7 +71,7 @@
                         <outlet property="grandma" destination="KYD-gC-IsV" id="9rb-pR-sM9"/>
                         <outlet property="mom" destination="uA7-gg-19X" id="Ndx-Cu-LZz"/>
                         <outlet property="pops" destination="xrC-jW-nP7" id="Ggx-MT-zPS"/>
-                        <segue destination="wTO-Fb-sRq" kind="show" identifier="FamilyMember" id="Udi-xE-CDt"/>
+                        <segue destination="wTO-Fb-sRq" kind="show" identifier="FamilyMember" destinationCreationSelector="FamilyMember:" id="Udi-xE-CDt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -81,25 +81,22 @@
         <!--FamilyMember-->
         <scene sceneID="2kv-cF-zYS">
             <objects>
-                <viewController title="FamilyMember" id="wTO-Fb-sRq" sceneMemberID="viewController">
+                <viewController title="FamilyMember" id="wTO-Fb-sRq" customClass="FamilyMemberViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yKA-Ui-IeD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cZi-cN-GmW">
-                                <rect key="frame" x="81.666666666666686" y="430" width="230" height="82.333333333333371"/>
+                                <rect key="frame" x="112.66666666666669" y="430" width="168" height="82.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haha nice!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id1-k3-8xP">
-                                        <rect key="frame" x="31" y="0.0" width="168" height="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="42"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*cries \n *shits a little" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-Gz-Box">
-                                        <rect key="frame" x="0.0" y="62.000000000000007" width="230" height="20.333333333333336"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="230" id="YV7-Ae-Zvo"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*cries" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5s-wb-lZf">
+                                        <rect key="frame" x="61.666666666666671" y="62.000000000000007" width="44.333333333333329" height="20.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -115,6 +112,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="p0C-nX-dOn"/>
+                    <connections>
+                        <outlet property="description" destination="J5s-wb-lZf" id="gl3-QS-iYN"/>
+                        <outlet property="name" destination="id1-k3-8xP" id="32t-Bf-sb5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGx-4f-dDL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

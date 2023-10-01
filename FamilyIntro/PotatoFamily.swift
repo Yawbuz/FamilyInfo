@@ -8,7 +8,10 @@
 import Foundation
 
 
-enum FamilyMember: String {
+
+// forgot to turn this into a struct. I should be writing more metacode
+    // enum is all that is needed actually! // do i?? 
+enum Person: String {
     case mom = "mom", pops = "pops", fry = "fry", grandma = "grandma"
     
     var descripton: String {
@@ -24,3 +27,8 @@ enum FamilyMember: String {
         }
     }
 }
+
+// gotta make a struct or class for a family member of the person type (lol)
+// I will take a shortcut and just make a family member variable object(actually it's also a class haha)
+// nevermind! I cant do this, because var is used within method scope
+
