@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         
         @IBSegueAction func FamilyMember(_ coder: NSCoder) -> FamilyMemberViewController? {
             if let member = memberSelected {
-                return FamilyMemberViewController(coder: coder, familyMember: memberSelected!)
+                return FamilyMemberViewController(coder: coder, familyMember: member)
             }
             return nil
             }

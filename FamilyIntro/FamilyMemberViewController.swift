@@ -15,6 +15,18 @@ class FamilyMemberViewController: UIViewController {
     
     @IBOutlet weak var memberDescription: UILabel!
     
+    @IBOutlet weak var popsImage: UIImageView!
+    @IBOutlet weak var grandmaImage: UIImageView!
+    @IBOutlet weak var momImage: UIImageView!
+    @IBOutlet weak var fryImage: UIImageView!
+    
+    func hideImages() {
+        popsImage.isHidden = true
+        grandmaImage.isHidden = true
+        momImage.isHidden = true
+        fryImage.isHidden = true
+        
+    }
     
     init?(coder: NSCoder, familyMember: Person) {
         self.familyMember = familyMember
@@ -27,10 +39,25 @@ class FamilyMemberViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        hideImages()
+        updateLabels()
 
         // Do any additional setup after loading the view.
     }
-    
+    func updateLabels() {
+        name.text = familyMember.rawValue
+        memberDescription.text = familyMember.descripton
+        switch familyMember {
+        case .mom:
+            momImage.isHidden = false
+        case .pops:
+            popsImage.isHidden = false
+        case .fry:
+            fryImage.isHidden = false
+        case .grandma:
+            grandmaImage.isHidden = false
+        }
+    }
 
     /*
     // MARK: - Navigation
